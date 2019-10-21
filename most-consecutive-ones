@@ -1,0 +1,21 @@
+#function f takes a binary string as a parameter and
+#splits it into a list using "0" as a separator, then finds
+#the longest element in the list and prints its length
+def f(x):
+  
+  ones = x.split('0')
+
+  streak = max(ones, key = len)
+  
+  print(len(streak))
+
+  #print(len(max(ones, key = len)))
+  #also works, less readable, but does not require "streak"
+
+
+#calls to f
+f('1011101101')
+f('11111')
+f('000000')
+f('101')
+f('')
