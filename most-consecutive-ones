@@ -1,6 +1,7 @@
 #function f takes a binary string as a parameter and
 #splits it into a list using "0" as a separator, then finds
 #the longest element in the list and prints its length
+
 def f(x):
   
   ones = x.split('0')
